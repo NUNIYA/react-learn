@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class  Counter extends Component {
    state={
-    value:this.props.value,
+    value:this.props.counter.value,
     tags:[]
    
    }; 
@@ -36,7 +36,7 @@ console.log(product );
     <button onClick={() => this.handleIncrement(product)} className="btn btn-secondary btn-sm">
       Increment
     </button>
-    <button onClick={() =>this.props.onDelete(this.props.id)} className='btn btn-danger btn-sm-m-2'>Delete</button>
+    <button onClick={() =>this.props.onDelete(this.props.counter.id)} className='btn btn-danger btn-sm-m-2'>Delete</button>
 
     {/* {this.state.tags.length===0 && 'please create new tag!'} */}
     {/* {this.renderTags()} */}
